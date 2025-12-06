@@ -41,6 +41,9 @@ Cette application permet de gérer différents services (ajout, modification, su
 * Flutter 3.35
 * Dart 3.9
 * Android Studio / VS Code
+* Laravel
+* Mysql
+* Flutter UI kits
 
 ---
 
