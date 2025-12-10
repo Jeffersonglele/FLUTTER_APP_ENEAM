@@ -11,7 +11,7 @@ Application mobile développée avec Flutter pour la gestion des prestations de 
 **Établissement** : École Nationale d'Économie Appliquée et de Management (ENEAM)  
 **Niveau** : 3ème année AIP (Analyse et Programmation Informatique)
 
-## Équipe de Développement
+## Membre du Groupe
 
 | Nom 
 |------
@@ -59,7 +59,6 @@ Application mobile développée avec Flutter pour la gestion des prestations de 
 - **API** : Laravel
 - **Base de données** : MySQL
 - **Authentification** : JWT
-- **Hébergement** : À définir
 
 ## Prérequis
 
