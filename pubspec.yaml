@@ -60,6 +60,8 @@ dependencies:
 
   # Animation onboarding
   concentric_transition: ^1.0.3
+  dotted_line: ^3.2.3
+  flutter_polyline_points: ^3.1.0
 
 
 dev_dependencies:
