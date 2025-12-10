@@ -47,7 +47,7 @@ dependencies:
 
   # Carte interactive (Leaflet)
   flutter_map: ^8.2.2
-  latlong2: ^0.9.0
+  latlong2: ^0.9.1
 
   # Notifications (pour To-do list)
   flutter_local_notifications: ^19.5.0
@@ -57,6 +57,9 @@ dependencies:
 
   # ID uniques
   uuid: ^4.3.3
+
+  # Animation onboarding
+  concentric_transition: ^1.0.3
 
 
 dev_dependencies:

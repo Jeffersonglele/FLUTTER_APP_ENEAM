@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:eneam_projet/pages/welcome_page.dart';
+import 'package:provider/provider.dart';
+import 'package:eneam_projet/pages/dashboard.dart';
+import 'package:eneam_projet/services/auth_service.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,12 +12,15 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        appBarTheme: const AppBarTheme(surfaceTintColor: Colors.white),
+    return ChangeNotifierProvider(
+      create: (context) => AuthService(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        theme: ThemeData(
+          appBarTheme: const AppBarTheme(surfaceTintColor: Colors.white),
+        ),
+        home: const ConcentricAnimationOnboarding(),
       ),
-      home: const WelcomeScreen(),
     );
   }
 }
