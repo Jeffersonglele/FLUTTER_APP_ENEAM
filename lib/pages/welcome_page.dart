@@ -12,7 +12,7 @@ class WelcomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xFF0F2A1D),
+      backgroundColor: AppColors.primary,
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
@@ -66,7 +66,7 @@ class WelcomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      "Let's",
+                      "Bienvenue",
                       style: GoogleFonts.sora(
                         fontSize: 48,
                         color: Colors.white,
@@ -74,7 +74,7 @@ class WelcomeScreen extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "get started",
+                      "Chez Trusty Serve",
                       style: GoogleFonts.sora(
                         fontSize: 48,
                         color: Colors.white,
@@ -83,7 +83,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 20),
                     Text(
-                      "Everything starts from here",
+                      "Votre Satisfaction, notre priorité",
                       style: GoogleFonts.sora(
                         fontSize: 16,
                         color: Colors.white60,
@@ -91,28 +91,28 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                     const SizedBox(height: 30),
                     CustomButton(
-                      text: "Log in",
+                      text: "Se Connecter",
                       color: const Color(0xFFF9C74F), // Yellow button
                       textColor: Colors.black,
                       onPressed: () {
                         Navigator.push(
                           context,
                           CupertinoPageRoute(
-                            builder: (context) => const LoginScreen(),
+                            builder: (context) => LoginScreen(),
                           ),
                         );
                       },
                     ),
                     const SizedBox(height: 10),
                     CustomButton(
-                      text: "Sign up",
-                      color: AppColors.primary,
-                      textColor: Colors.black,
+                      text: "S'inscrire",
+                      color: Color(0xFF0F2A1D),
+                      textColor: Colors.white,
                       onPressed: () {
                         Navigator.push(
                           context,
                           CupertinoPageRoute(
-                            builder: (context) => const SignupPage(),
+                            builder: (context) => SignupPage(),
                           ),
                         );
                       },
