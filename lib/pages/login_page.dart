@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
 
 import '../services/api_service.dart';
+import '../services/auth_service.dart';
+import '../models/user_model.dart';
 import 'home.dart' as home_page;
 import 'signup_page.dart';
 
@@ -58,6 +61,16 @@ class _LoginScreenState extends State<LoginScreen> {
         setState(() => loading = false);
 
         if (resp["success"] == true) {
+          // Créer l'objet utilisateur à partir de la réponse
+          if (resp["data"] != null) {
+            print('Données utilisateur reçues: ${resp["data"]}'); // Debug
+            final user = UserModel.fromJson(resp["data"]);
+            // Définir l'utilisateur dans AuthService
+            final authService = Provider.of<AuthService>(context, listen: false);
+            authService.setUser(user);
+            print('Utilisateur défini dans AuthService: ${authService.currentUser}'); // Debug
+          }
+          
           Navigator.pushReplacement(
             context,
             MaterialPageRoute(

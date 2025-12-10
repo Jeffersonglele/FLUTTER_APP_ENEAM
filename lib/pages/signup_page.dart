@@ -1,9 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+
 import 'package:eneam_projet/config/app_color.dart' as app_color;
 import 'package:eneam_projet/widgets/custom_text_field.dart';
 import 'package:eneam_projet/services/api_service.dart';
+import 'package:eneam_projet/services/auth_service.dart';
+import 'package:eneam_projet/models/user_model.dart';
 import 'home.dart' as home_page;
 
 class SignupPage extends StatefulWidget {
@@ -92,6 +96,16 @@ class SignupPageState extends State<SignupPage> {
       setState(() => loading = false);
 
       if (resp["success"] == true) {
+        // Créer l'objet utilisateur à partir de la réponse
+        if (resp["data"] != null) {
+          print('Données utilisateur reçues (inscription): ${resp["data"]}'); // Debug
+          final user = UserModel.fromJson(resp["data"]);
+          // Définir l'utilisateur dans AuthService
+          final authService = Provider.of<AuthService>(context, listen: false);
+          authService.setUser(user);
+          print('Utilisateur défini dans AuthService (inscription): ${authService.currentUser}'); // Debug
+        }
+        
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => const home_page.HomePage()),

@@ -6,13 +6,21 @@ import 'package:eneam_projet/config/app_color.dart';
 class CustomTextField extends StatefulWidget {
   final String label;
   final bool isPassword;
-  final IconData? prefixIcon; // Add prefix icon support
+  final IconData? prefixIcon;
+  final TextEditingController? controller;
+  final TextInputType? keyboardType;
+  final ValueChanged<String>? onChanged;
+  final ValueChanged<String>? onSubmitted;
 
   const CustomTextField({
     super.key,
     required this.label,
     this.isPassword = false,
-    this.prefixIcon, // Optional icon
+    this.prefixIcon,
+    this.controller,
+    this.keyboardType,
+    this.onChanged,
+    this.onSubmitted,
   });
 
   @override
@@ -25,7 +33,11 @@ class _CustomTextFieldState extends State<CustomTextField> {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: widget.controller,
+      keyboardType: widget.keyboardType,
       obscureText: widget.isPassword ? _isObscured : false,
+      onChanged: widget.onChanged,
+      onSubmitted: widget.onSubmitted,
       decoration: InputDecoration(
         labelText: widget.label,
         border: OutlineInputBorder(
