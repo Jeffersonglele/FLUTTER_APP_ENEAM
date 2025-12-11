@@ -65,7 +65,6 @@ Application mobile développée avec Flutter pour la gestion des prestations de 
 - Flutter SDK (dernière version stable)
 - Dart SDK
 - Un émulateur Android/iOS ou un appareil physique
-- Compte développeur (pour les déploiements)
 
 ## Installation
 
@@ -87,26 +86,26 @@ Application mobile développée avec Flutter pour la gestion des prestations de 
 
 ## Captures d'écran
 
-<p align="center">
-  <img src="assets/images/SLIDE1.png" width="300">
+<p>
+  <img src="assets/images/SLIDE1.png" width="200">
 </p>
-<p align="center">
-  <img src="assets/images/SLIDE2.png" width="300">
+<p>
+  <img src="assets/images/SLIDE2.png" width="200">
 </p>
-<p align="center">
-  <img src="assets/images/SLIDE3.png" width="300">
+<p>
+  <img src="assets/images/SLIDE3.png" width="200">
 </p>
-<p align="center">
-  <img src="assets/images/START.png" width="300">
+<p>
+  <img src="assets/images/START.png" width="200">
 </p>
-<p align="center">
-  <img src="assets/images/HOME.png" width="300">
+<p>
+  <img src="assets/images/HOME.png" width="200">
 </p>
-<p align="center">
-  <img src="assets/images/USER.png" width="300">
+<p>
+  <img src="assets/images/USER.png" width="200">
 </p>
-<p align="center">
-  <img src="assets/images/MAP.png" width="300">
+<p>
+  <img src="assets/images/MAP.png" width="200">
 </p>
 
 
