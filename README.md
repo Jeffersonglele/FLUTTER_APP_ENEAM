@@ -87,13 +87,27 @@ Application mobile développée avec Flutter pour la gestion des prestations de 
 
 ## Captures d'écran
 
-![Aperçu de l'application](assets/images/SLIDE1.png)
-![Aperçu de l'application](assets/images/SLIDE2.png)
-![Aperçu de l'application](assets/images/SLIDE3.png)
-![Aperçu de l'application](assets/images/START.png)
-![Aperçu de l'application](assets/images/HOME.png)
-![Aperçu de l'application](assets/images/USER.png)
-![Aperçu de l'application](assets/images/MAP.png)
+<p align="center">
+  <img src="assets/images/SLIDE1.png" width="300">
+</p>
+<p align="center">
+  <img src="assets/images/SLIDE2.png" width="300">
+</p>
+<p align="center">
+  <img src="assets/images/SLIDE3.png" width="300">
+</p>
+<p align="center">
+  <img src="assets/images/START.png" width="300">
+</p>
+<p align="center">
+  <img src="assets/images/HOME.png" width="300">
+</p>
+<p align="center">
+  <img src="assets/images/USER.png" width="300">
+</p>
+<p align="center">
+  <img src="assets/images/MAP.png" width="300">
+</p>
 
 
 
